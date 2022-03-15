@@ -308,8 +308,8 @@ td th {
     
     
     /* Menu */
-
-    nav ul{
+    
+     nav ul{
         background-color: black;
         width: 100%;
         height: 50px;
@@ -324,12 +324,7 @@ td th {
         border-radius: 15%;}
     
     ul li:hover{
-        background-color: rgb(255, 255, 255);
-        font-family:'Mali', cursive;
-        color: black;}
-    
-    ul li:hover a{
-        background-color: rgb(255, 255, 255);
+        background-color: aliceblue;
         font-family:'Mali', cursive;
         color: black;}
     
@@ -366,8 +361,8 @@ td th {
         margin: 40px ;}
     
     .imgA{width: 100%;
-    align-items: center;}
-
+        align-items: center;}
+    
     /* Estructura INDEX */
      .section{
         display: flex;
@@ -440,21 +435,29 @@ td th {
     }
     
     .carta{
-        overflow: hidden;
-        width: 365px;
+        width: 400px;
         height: 365px;
+        margin-top: 7%;
     }
     
-    .carta:hover .card-body{
+    .card-body{
+        display: none;
+    }
+    
+    .imgCarta:hover .card-body{
         position: absolute;
-        border-radius: 10px;
-        margin-top: 7%;
-        width: 365px;
+        border-radius: 5px;
+        margin-top: 30px;
+        width: 350px;
         height: auto;
         overflow: hidden;
         background-color: beige;
-        transform: translate(0, 230px);}
+        transform: translate(0, 300px);
+        display: block;}
     
+    .imgCarta:hover{
+        overflow: visible;
+    }
     
     .carta:hover { 
         transform: scale(1.05);
@@ -462,26 +465,25 @@ td th {
         overflow: block;}
     
     .imgCarta{
-        background: bisque;
+        background: Snow;
         padding: 10px;
         border-radius: 10px;
         margin-left: 50px;
-        margin-bottom: 20px;}
+        margin-bottom: 20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;}
+    
+    .Img{margin-bottom: 50px;}
     
     /*estructura Tipos*/
-
-    .cuerpoT{
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-        align-content: space-around;
-        width: 70%;
-        margin-top: 7%;
-        margin-left:15% ;}
     
-    .introT{
-        width: 70%;
-        margin-left:15% ;
+    .cuerpoTi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7%;
     }
     
     .tabla {
@@ -503,6 +505,16 @@ td th {
     
     /*estructura HISTORIA*/
     
+    .cuerpoT{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        width: 70%;
+        margin-top: 7%;
+        margin-left:15% ;
+    }
+    
     .historia{
         background-image: url("../imagenes/Cabras-de-Kaldi-consumen-café.jpg");
         border-radius: 10px;
@@ -521,8 +533,271 @@ td th {
         width: 500px;
         padding: 20px;
         margin: 40px ;}
+    
 }
 
 @media (min-width: 480px) and (max-width: 560 ){
-
+    body{ 
+        background-color:ghostwhite;
+        display: grid;
+        grid-template-areas: "icono" "menu"
+     "body" "footer";
+        width: 100%;}
+        
+    h1 {font-family: 'Indie Flower', cursive;
+        font-size: 25px;}
+    
+    p{font-family: 'Mali', cursive;
+      font-size: 22px;
+    }
+    
+     p::selection{
+        background-color: blanchedalmond;
+        color: black;}
+    
+    h1::selection{
+        background-color: blanchedalmond;
+        color: black;}
+    
+    .icono{
+        display: grid;
+        grid-area: icono;
+        justify-content: center;}
+    
+    footer{
+        margin-top: 10%;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content:center ;}
+    
+    
+    
+    /* Menu */
+    
+     nav ul{
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction:row;}
+        
+    li { 
+        text-decoration: none;
+        text-align: center;
+        width: 10%;
+        border-radius: 15%;}
+    
+    ul li:hover{
+        background-color: aliceblue;
+        font-family:'Mali', cursive;
+        color: black;}
+    
+    .neutro li a{
+        font-family: 'Mali', cursive;
+        color: aliceblue;
+        text-decoration: none;
+        text-transform: uppercase;}
+    
+    /*Estructura general de los aside*/
+    
+    .piedad{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;}
+    
+    .asideI{
+        background-image: url("../imagenes/aside.jpg");
+        border-radius: 10px;
+        width: 50%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction:row}
+    
+    .contenido-del-Aside {
+        background-color: Snow;
+        border-radius: 10px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 20px;
+        text-align: center;
+        width: 300px;
+        padding: 20px;
+        margin: 40px ;}
+    
+    .imgA{width: 100%;
+        align-items: center;}
+    
+    /* Estructura INDEX */
+     .section{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;}
+    
+    .sectionINFO{
+        margin-top: 100px;
+        width: 400px;
+        height: 200px;}
+    
+    /*Estructura METODOS*/
+    
+    .cuerpoS{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .margin{
+        margin-top: 10%;
+        align-content: center;
+    }
+    .metodos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;}
+    
+    .padreInfo{
+        flex-direction: row;
+        justify-content: center;
+        width: 400px;
+        padding: 20px;
+        margin: 40px}
+    
+    .infoMetodos{
+        width: 200%;
+        height: 100px;
+        text-align: justify;}
+    
+    .imgMetodos {
+        background: linear-gradient(96deg, coral, Moccasin);
+       padding: 10px;
+       border-radius: 10px;
+       margin-left: 50px;
+       margin-bottom: 20px;
+       width: 300px;
+       height: 300px;
+        }
+    
+    .p{
+        font-family: 'Mali', cursive;
+        font-size: 20px;
+        text-decoration: none;}
+    
+    ul li{
+        text-decoration: none;
+    }
+    
+    /*estructura CARTA*/
+    
+    .caffe-BaseE{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content:space-between;
+    }
+    
+    .carta{
+        width: 400px;
+        height: 365px;
+        margin-top: 7%;
+    }
+    
+    .card-body{
+        display: none;
+    }
+    
+    .imgCarta:hover .card-body{
+        position: absolute;
+        border-radius: 5px;
+        margin-top: 30px;
+        width: 350px;
+        height: auto;
+        overflow: hidden;
+        background-color: beige;
+        transform: translate(0, 300px);
+        display: block;}
+    
+    .imgCarta:hover{
+        overflow: visible;
+    }
+    
+    .carta:hover { 
+        transform: scale(1.05);
+        transition-duration: 0.7s;
+        overflow: block;}
+    
+    .imgCarta{
+        background: Snow;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;}
+    
+    .Img{margin-bottom: 50px;}
+    
+    /*estructura Tipos*/
+    
+    .cuerpoTi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7%;
+    }
+    
+    .tabla {
+        margin-top: 7%; 
+        display: flex;
+    
+        justify-content: center;}
+    
+    table th td tr { 
+        border: 1px solid cyan;} 
+    
+    table{ 
+        border-collapse: collapse;
+        width: 50%;}
+    
+    td th { 
+        text-align: center;
+        vertical-align: top;}
+    
+    /*estructura HISTORIA*/
+    
+    .cuerpoT{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        width: 70%;
+        margin-top: 7%;
+        margin-left:15% ;
+    }
+    
+    .historia{
+        background-image: url("../imagenes/Cabras-de-Kaldi-consumen-café.jpg");
+        border-radius: 10px;
+        width: 50%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction:row}
+    
+    .contenido-del-Historia {
+        background-color: Snow;
+        border-radius: 10px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 20px;
+        text-align: center;
+        width: 500px;
+        padding: 20px;
+        margin: 40px ;}
+    
 }
