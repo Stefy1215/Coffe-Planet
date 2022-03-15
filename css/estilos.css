@@ -325,10 +325,13 @@ td th {
     
     ul li:hover{
         background-color: rgb(255, 255, 255);
-        font-family:'Mali', cursive;}
+        font-family:'Mali', cursive;
+        color: black;}
     
-        ul li:hover a{
-            color: black;}
+    ul li:hover a{
+        background-color: rgb(255, 255, 255);
+        font-family:'Mali', cursive;
+        color: black;}
     
     .neutro li a{
         font-family: 'Mali', cursive;
@@ -466,13 +469,15 @@ td th {
         margin-bottom: 20px;}
     
     /*estructura Tipos*/
-    
-    .cuerpoTi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 7%;
-    }
+
+    .cuerpoT{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        width: 70%;
+        margin-top: 7%;
+        margin-left:15% ;}
     
     .introT{
         width: 70%;
@@ -498,16 +503,6 @@ td th {
     
     /*estructura HISTORIA*/
     
-    .cuerpoT{
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-        align-content: space-around;
-        width: 70%;
-        margin-top: 7%;
-        margin-left:15% ;
-    }
-    
     .historia{
         background-image: url("../imagenes/Cabras-de-Kaldi-consumen-café.jpg");
         border-radius: 10px;
@@ -526,9 +521,6 @@ td th {
         width: 500px;
         padding: 20px;
         margin: 40px ;}
-    
-    
-
 }
 
 @media (min-width: 480px) and (max-width: 560 ){
