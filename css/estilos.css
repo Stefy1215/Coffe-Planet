@@ -12,7 +12,8 @@ body{
  "body" "footer";
     width: 100%;}
     
-h1 {font-family: 'Indie Flower', cursive;}
+h1 {font-family: 'Indie Flower', cursive;
+    font-size: 25px;}
 
 p{font-family: 'Mali', cursive;
   font-size: 22px;
@@ -58,6 +59,7 @@ li {
 
 ul li:hover{
     background-color: aliceblue;
+    font-family:'Mali', cursive;
     color: black;}
 
 .neutro li a{
@@ -93,6 +95,7 @@ ul li:hover{
     margin: 40px ;}
 
 
+
 /* Estructura INDEX */
  .section{
     display: flex;
@@ -106,22 +109,31 @@ ul li:hover{
 
 /*Estructura METODOS*/
 
+.cuerpoS{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .margin{
-    margin-top: 7%;
+    margin-top: 10%;
+    align-content: center;
 }
 .metodos{
     display: flex;
-    flex-direction: row;}
+    flex-direction: row;
+    justify-content: center;}
 
 .padreInfo{
     flex-direction: row;
     justify-content: center;
-    width: 300px;
+    width: 400px;
     padding: 20px;
     margin: 40px}
 
 .infoMetodos{
-    width: 1000px;
+    width: 200%;
     height: 100px;
     text-align: justify;}
 
@@ -130,7 +142,10 @@ ul li:hover{
    padding: 10px;
    border-radius: 10px;
    margin-left: 50px;
-   margin-bottom: 20px;}
+   margin-bottom: 20px;
+   width: 300px;
+   height: 300px;
+    }
 
 .p{
     font-family: 'Mali', cursive;
@@ -152,9 +167,46 @@ ul li{
     align-content:space-between;
 }
 
+.carta{
+    overflow: hidden;
+    width: 365px;
+    height: 365px;
+    margin-top: 7%;
+}
+
+.imgCarta:hover .card-body{
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    background-color: beige;
+    transform: translate(0, 500px);
+    display: block;}
+
+.imgCarta:hover{
+    overflow: visible;
+}
+
 .carta:hover { 
     transform: scale(1.05);
-    transition-duration: 0.7s;}
+    transition-duration: 0.7s;
+    overflow: block;}
+
+.imgCarta{
+    background: Snow;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;}
+
+.Img{margin-bottom: 50px;}
+
 
 /*estructura Tipos*/
 
@@ -173,7 +225,7 @@ margin-top: 7%;
 .tabla {
     margin-top: 7%; 
     display: flex;
-    flex-direction: row;
+
     justify-content: center;}
 
 table th td tr { 
@@ -218,20 +270,6 @@ td th {
     padding: 20px;
     margin: 40px ;}
 
-/*prueba*/
-
-.S-padre{
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-}
-.hijos{
-    align-content: space-around;
-    align-items: center;
-
-}
-
 }
 
 @media (max-width: 1023px) and (min-width: 480px) {
@@ -242,7 +280,8 @@ td th {
      "body" "footer";
         width: 100%;}
         
-    h1 {font-family: 'Indie Flower', cursive;}
+    h1 {font-family: 'Indie Flower', cursive;
+        font-size: 25px;}
     
     p{font-family: 'Mali', cursive;
       font-size: 22px;
@@ -322,7 +361,9 @@ td th {
         padding: 20px;
         margin: 40px ;}
     
-    
+    .imgA{width: 100%;
+    align-items: center;}
+
     /* Estructura INDEX */
      .section{
         display: flex;
@@ -336,24 +377,31 @@ td th {
     
     /*Estructura METODOS*/
     
-    .margin{
+    .cuerpoS{
         width: 70%;
-        margin-top: 7%;
-    }
-    .metodosPadre{
         display: flex;
         flex-direction: row;
-        align-content: center;}
+        justify-content: center;
+    }
+    
+    .margin{
+        margin-top: 10%;
+        align-content: center;
+    }
+    .metodos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;}
     
     .padreInfo{
         flex-direction: row;
         justify-content: center;
-        width: 300px;
+        width: 400px;
         padding: 20px;
         margin: 40px}
     
     .infoMetodos{
-        width: 1000px;
+        width: 200%;
         height: 100px;
         text-align: justify;}
     
@@ -362,7 +410,10 @@ td th {
        padding: 10px;
        border-radius: 10px;
        margin-left: 50px;
-       margin-bottom: 20px;}
+       margin-bottom: 20px;
+       width: 300px;
+       height: 300px;
+        }
     
     .p{
         font-family: 'Mali', cursive;
@@ -376,8 +427,7 @@ td th {
     /*estructura CARTA*/
     
     .caffe-BaseE{
-        width: 70%;
-        margin-left:15% ;
+        width: 90%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -385,16 +435,42 @@ td th {
         align-content:space-between;
     }
     
+    .carta{
+        overflow: hidden;
+        width: 365px;
+        height: 365px;
+    }
+    
+    .carta:hover .card-body{
+        position: absolute;
+        border-radius: 10px;
+        margin-top: 7%;
+        width: 365px;
+        height: auto;
+        overflow: hidden;
+        background-color: beige;
+        transform: translate(0, 230px);}
+    
+    
     .carta:hover { 
         transform: scale(1.05);
-        transition-duration: 0.7s;}
+        transition-duration: 0.7s;
+        overflow: block;}
+    
+    .imgCarta{
+        background: bisque;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-bottom: 20px;}
     
     /*estructura Tipos*/
     
-    .cuerpoti {
+    .cuerpoTi {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 7%;
     }
     
     .introT{
@@ -405,7 +481,7 @@ td th {
     .tabla {
         margin-top: 7%; 
         display: flex;
-        flex-direction: row;
+    
         justify-content: center;}
     
     table th td tr { 
@@ -424,8 +500,10 @@ td th {
     .cuerpoT{
         display: flex;
         flex-direction:row;
-        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-around;
         width: 70%;
+        margin-top: 7%;
         margin-left:15% ;
     }
     
@@ -448,6 +526,6 @@ td th {
         padding: 20px;
         margin: 40px ;}
     
+    
 
 }
-

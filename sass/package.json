@@ -1,0 +1,23 @@
+{
+  "name": "trabajo-final",
+  "version": "1.0.0",
+  "description": "\"# Coffe-Planet\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stefy1215/Coffe-Planet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stefy1215/Coffe-Planet/issues"
+  },
+  "homepage": "https://github.com/Stefy1215/Coffe-Planet#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
